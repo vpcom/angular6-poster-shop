@@ -38,7 +38,7 @@ import {
 } from '@angular/material';
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import { FlexLayoutModule } from '@angular/flex-layout';
-import { Http, HttpModule } from '@angular/http';
+import { HttpClientModule } from '@angular/common/http';
 // Local components
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
@@ -117,7 +117,7 @@ import { FormsModule, ReactiveFormsModule, FormBuilder } from '@angular/forms';
     MatToolbarModule,
     MatTooltipModule,
     
-    HttpModule,
+    HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
 

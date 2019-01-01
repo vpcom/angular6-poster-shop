@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Http, Response } from '@angular/http';
+import { HttpClient } from '@angular/common/http';
 import { Observable } from 'rxjs';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
@@ -14,15 +14,15 @@ export class DataService {
   dataUrl: string = environment.baseHref + '/assets/data/space_invaders.json';
   cachedData: PosterType[] = null;
 
-  constructor(private http: Http) { }
+  constructor(private http: HttpClient) { }
 
   getData(): Observable<PosterType[]> {
     if (this.cachedData === null) {
       return this.http.get(this.dataUrl)
         .map(res => {
-          this.cachedData = res.json().data;
+          this.cachedData = res['data'];
           // console.log(this.cachedData);
-          return <PosterType[]>res.json().data || {}; 
+          return <PosterType[]>res['data'] || {}; 
         })
         .catch(this.handleError);
     } else {
