@@ -8,7 +8,7 @@ A simple web application (for buying posters) aiming at being a good use case of
 
 A small-sized Angular 5 project migrated to Angular 6 designed with Material Design components, forms with a redux architecture and observable services.
 
-**Demo: [http://vincentperrin.com/poster-shop/angular/](http://vincentperrin.com/poster-shop/angular/)**
+**Demo wih Angular 5: [http://vincentperrin.com/poster-shop/angular/](http://vincentperrin.com/poster-shop/angular/)**
 
 ## A full test scenarion and technical features
 
