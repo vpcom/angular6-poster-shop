@@ -1,4 +1,4 @@
-# Angular 6 poster shop
+# Angular 7 poster shop
 
 **!!! Project in progress !!!**
 
@@ -6,7 +6,7 @@
 
 A simple web application (for buying posters) aiming at being a good use case of Angular and other librairies.
 
-A small-sized Angular 5 project migrated to Angular 6 designed with Material Design components, forms with a redux architecture and observable services.
+A small-sized Angular 5 project migrated to Angular 7 designed with Material Design components, forms with a redux architecture and observable services.
 
 **Demo: [http://vincentperrin.com/poster-shop/angular/](http://vincentperrin.com/poster-shop/angular/)**
 
