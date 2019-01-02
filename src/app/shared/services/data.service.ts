@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable } from 'rxjs';
+import { Observable, of } from 'rxjs';
 import 'rxjs/add/operator/map';
 import 'rxjs/add/operator/catch';
 
@@ -26,7 +26,7 @@ export class DataService {
         })
         .catch(this.handleError);
     } else {
-      return Observable.of(this.cachedData);
+      return of(this.cachedData);
     }
   }
 
@@ -41,7 +41,7 @@ export class DataService {
           foundItem = item;
         }
       });
-      return Observable.of(foundItem);
+      return of(foundItem);
     }
   }
 

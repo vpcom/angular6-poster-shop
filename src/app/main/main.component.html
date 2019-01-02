@@ -7,10 +7,10 @@
   </mat-sidenav-content>
 
   <!-- Need two versions of the side panel for parameters specific to the mobile display -->
-  <mat-sidenav id="sidenav-mob" *ngIf="media.isActive('xs')" align="end" mode="over" role="navigation" [(opened)]="opened" fxFlex="300px" fxHide >
+  <mat-sidenav id="sidenav-mob" *ngIf="media.isActive('xs')" position="end" mode="over" role="navigation" [(opened)]="opened" fxFlex="300px" fxHide >
     <app-cart></app-cart>
   </mat-sidenav>
-  <mat-sidenav id="sidenav" *ngIf="!media.isActive('xs')" align="end" mode="side" role="navigation" [(opened)]="opened" fxFlex="200px" fxShow  >
+  <mat-sidenav id="sidenav" *ngIf="!media.isActive('xs')" position="end" mode="side" role="navigation" [(opened)]="opened" fxFlex="200px" fxShow  >
       <app-cart></app-cart>
   </mat-sidenav>
 
